@@ -15,6 +15,11 @@ app.use(bodyParser.json());
 //initialise routes
 app.use(routes);
 
+//middleware error handling
+app.use(function(err, req, res,next){
+  res.send({error: err.message})
+});
+
 
 
 
