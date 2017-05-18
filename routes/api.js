@@ -16,12 +16,15 @@ Login.create(req.body).then(function(login){
 });
 
 // update deatils of waiter in DB
-router.put('/login/:id', function (req, res){
-  Login.findOne({empID: req.params.id}).then(function(login){
-    Login.update({name:login },
-      {availabilty:{Monday: true}
-    }
-    res.send(shift);
+router.put('/login/:id', function (req, res, next){
+  Login.findOne({empID: Number(req.params.id)}).then(function(login){
+    login.availability.Monday = false;
+    login
+      .save()
+      .then(function(results){
+        res.send(results);
+      });
+
   }).catch(next);
 });
 

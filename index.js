@@ -20,9 +20,6 @@ app.use(function(err, req, res,next){
   res.send({error: err.message})
 });
 
-
-
-
 //listen to port
 var port = process.env.PORT || 3000;
 
