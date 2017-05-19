@@ -2,7 +2,7 @@ const mongoose = require ('mongoose');
 const Schema = mongoose.Schema;
 
 // create login Schema & model
-const LoginSchema = new Schema ({
+const EmployeeSchema = new Schema ({
   empID:{type: Number, required: [true, 'Login Field is Required']},
   name: {type: String, required: [true, 'Name Field is Required']},
   position: {type: String, required: [true, 'Position Field is Required']},
@@ -17,6 +17,6 @@ const LoginSchema = new Schema ({
   }
 });
 
-const Login = mongoose.model('login', LoginSchema);
+const Employee = mongoose.model('employee', EmployeeSchema);
 
-module.exports = Login;
+module.exports = Employee;

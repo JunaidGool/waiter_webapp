@@ -1,0 +1,92 @@
+body{
+    background: #ea9a62;
+    font-family: tahoma;
+    margin: 10px 30px;
+}
+
+form{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+input[type="text"]{
+    position: relative;
+    width: 29%;
+    padding:10px;
+    background:#ffffcc;
+    border: 0;
+    font-size: 20px;
+    color: #989898;
+    float: right;
+    right: 40%;
+    /*top: 300px;*/
+    box-shadow: 10px 10px 5px #4d2800;
+
+}
+
+button{
+    position: relative;
+    padding: 10px;
+    width: 30%;
+    background: #990000;
+    border: 0;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+    right: 40%;
+    /*top: 300px;*/
+    box-shadow: 10px 10px 5px #4d2800;
+}
+
+h1 {
+    position: relative;
+    left: 40%;
+    /*top: 300px;*/
+    text-shadow: 3px 2px #f0b78f;
+    font-weight: normal;
+}
+
+h3 {
+    position: relative;
+    left: 40%;
+    /*top: 300px;*/
+    text-shadow: 3px 2px #f0b78f;
+    font-weight: normal;
+}
+
+.createAccText {
+  position: relative;
+  left: 300px;
+}
+
+.flashMessageCreate{
+  position: relative;
+  text-shadow: 3px 2px #f0b78f;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: red;
+  left: 600px;
+}
+
+.deleteAccText{
+  position: relative;
+  left: 350px;
+}
+
+
+
+/*img {
+    max-width: 100%;
+    max-height: 100%;
+}*/
+
+/*.steaming {
+    max-width: 100%;
+    height: 200px;
+    background-image: url('steaming.jpg','coffee-image1.jpg','coffee-image2.jpg','coffee-image3.jpg', 'coffee-image4.jpg', 'coffee-image5.jpg' );
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid black;
+}*/

@@ -1,0 +1,12 @@
+<form id="create-form" method="post" action="/create-new-account">
+<h1 class="createAccText"> Create New Account </h1>
+<input type="text"  name="empId" placeholder="Please Enter Employee ID" required> </input><br><br><br><br>
+<input type="text"  name="empName" placeholder="Please Enter Employee Name" required> </input><br><br><br><br>
+<input type="text"  name="empPosition" placeholder="Please Enter Employee Position" required> </input><br><br><br><br>
+<button type="submit" value="submit"> Accept </button><br><br><br><br>
+<a href="/delete-account">Delete Account</a>
+</form>
+
+<div class="flashMessageCreate">
+{{messages.error}}
+</div>
