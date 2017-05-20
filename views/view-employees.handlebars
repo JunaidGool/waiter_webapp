@@ -1,20 +1,7 @@
-<!-- <table id="myEmployeesTable">
-      <thead class ="employeesTableHead">
-      <th>Employee ID</th>
-      <th>Employee Name</th>
-      <th>Delete</th>
-    </thead>
-    <tbody>
-        {{#each empTable}}
-        <tr>
-            <td>{{this.empId}}</td>
-            <td>{{this.name}}</td>
-        </tr>
-        {{/each}}
-    </tbody>
-</table> -->
-
-
+<a href="/login">Employee Sign In</a>
+<a href="/create-new-account">Create New Account</a>
+<a href="/home">Home</a>
+<br><br><br><br>
 <table>
     <thead>
         <tr>
@@ -25,8 +12,9 @@
         </tr>
         <tr>
             <th colspan="3"></th>
-            <th colspan="">Sunday</th>
-            <th colspan="">Monday</th>
+
+            <th>Sunday</th>
+            <th>Monday</th>
             <th>Tuesday</th>
             <th>Wednesday</th>
             <th>Thursday</th>
@@ -35,17 +23,19 @@
         </tr>
     </thead>
     <tbody>
+        {{#each employee}}
         <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
+            <td>{{this.empID}} </td>
+            <td>{{this.name}} </td>
+            <td>{{this.position}} </td>
+            <td>{{this.availability.Sunday}} </td>
+            <td>{{this.availability.Monday}} </td>
+            <td>{{this.availability.Tuesday}} </td>
+            <td>{{this.availability.Wednesday}} </td>
+            <td>{{this.availability.Thursday}} </td>
+            <td>{{this.availability.Friday}} </td>
+            <td>{{this.availability.Saturday}} </td>
+          {{/each}}
         </tr>
 
     </tbody>

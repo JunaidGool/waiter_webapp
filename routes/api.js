@@ -36,31 +36,21 @@ router.post('/create-new-account', function (req, res, next){
 
 // get employee details
 router.get('/view-employees', function (req, res, next){
+  Employee.find({}).then(function(employee){
 
-res.render('view-employees')
+    console.log(employee);
+
+  res.render('view-employees', {employee});
+  }).catch(next);
+
+});
+
+// post employee details
+router.post('/view-employees', function (req, res, next){
+
 });
 
 
-
-
-
-
-
-
-
-
-// delete employee account
-// router.delete('/delete-account/:empId', function (req, res, next){
-//   var paramId = req.params.empId;
-//
-//     Employee.findOne({empID:req.params.empId}).then (function(employee){
-//       employee.remove(), //Remove all the documents that match!
-//       res.send(employee);
-//       console.log(employee)
-//       req.flash('error', 'Employee Has Succesfully Been Deleted');
-//       res.redirect('/delete-account/:empId');
-//     }).catch(next);
-// });
 
 
 
