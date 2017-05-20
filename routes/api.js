@@ -3,12 +3,19 @@ const router = express.Router();
 const Employee = require('../models/login');
 const bodyParser = require('body-parser');
 
-// get create new employee form
-router.get('/create-new-account', function (req, res, next){
-
-res.render('create-new-account')
+router.get('/', function (req, res, next){
+res.redirect('home');
 });
 
+router.get('/home', function (req,res,next){
+res.render('home');
+});
+
+
+// get create new employee form
+router.get('/create-new-account', function (req, res, next){
+res.render('create-new-account');
+});
 
 // post create new employee form
 router.post('/create-new-account', function (req, res, next){
@@ -27,28 +34,33 @@ router.post('/create-new-account', function (req, res, next){
   }
 });
 
-// get delete employee account
-router.get('/delete-account', function (req, res, next){
+// get employee details
+router.get('/view-employees', function (req, res, next){
 
-res.render('delete-account')
+res.render('view-employees')
 });
+
+
+
+
+
+
+
+
+
 
 // delete employee account
-router.delete('/delete-account/:id', function (req, res, next){
-  Employee.findOne({empID: req.params.id}).then (function(employee){
-    login.remove(), //Remove all the documents that match!
-    res.send(employee);
-  }).catch(next);
-});
-
-
-
-
-
-
-
-
-
+// router.delete('/delete-account/:empId', function (req, res, next){
+//   var paramId = req.params.empId;
+//
+//     Employee.findOne({empID:req.params.empId}).then (function(employee){
+//       employee.remove(), //Remove all the documents that match!
+//       res.send(employee);
+//       console.log(employee)
+//       req.flash('error', 'Employee Has Succesfully Been Deleted');
+//       res.redirect('/delete-account/:empId');
+//     }).catch(next);
+// });
 
 
 
@@ -80,10 +92,10 @@ router.put('/login/:id', function (req, res,next){
 
 // delete waiter from the database
 router.delete('/login/:id', function (req, res, next){
-  Employee.findOne({empID: req.params.id}).then (function(employee){
-    login.remove(), //Remove all the documents that match!
-    res.send(employee);
-  }).catch(next);
-});
+   Employee.findOne({empID: req.params.id}).then (function(login){
+     login.remove(), //Remove all the documents that match!
+     res.send(login);
+   }).catch(next);
+  });
 
 module.exports = router;
