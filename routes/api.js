@@ -49,8 +49,6 @@ router.get('/login', function (req, res){
 res.render('login');
 });
 
-
-
 router.get('/waiter/:id', function (req, res, next){
   Employee.findOne({empID: req.params.id }).then(function(employee){
 
@@ -60,12 +58,10 @@ router.get('/waiter/:id', function (req, res, next){
 
 router.post('/waiter/submit',urlencodedParser, function (req, res, next){
   var id = req.body.id;
-  Employee.findOne({empID: Number(id)}).then (function(employee){
 
   res.redirect('/waiter/' + id);
-  })
-
 });
+
 
 
 

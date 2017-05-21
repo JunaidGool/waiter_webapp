@@ -1,26 +1,28 @@
-<h1> Employee ID: {{output}} <h1>
+<a href="/view-employees">View Employees</a>
+<a href="/create-new-account">Create Account</a>
+<a href="/login">Sign IN</a>
 
-<h1> Welcome {{employee.name}} <h1>
+<h1 class="empIDOutput"> Employee ID: {{output}} </h1>
+<h1 class="empNameOutput"> Welcome {{employee.name}} </h1>
+  <form class="checkBoxForm " action="/waiter/:id" method="post">
+  <h2>please select the days you will be working </h2>
+  <h2>
+  <input type="checkbox" name="selectDay" value="Sunday">Sunday<br>
+  <input type="checkbox" name="selectDay" value="Monday">Monday<br>
+  <input type="checkbox" name="selectDay" value="Tuesday">Tuesday<br>
+  <input type="checkbox" name="selectDay" value="Wednesday">Wednesday<br>
+  <input type="checkbox" name="selectDay" value="Thursday">Thursday<br>
+  <input type="checkbox" name="selectDay" value="Friday">Friday<br>
+  <input type="checkbox" name="selectDay" value="Saturday">Saturday<br><br>
+  <!-- <button class="checkBoxButtonView" type="submit" value="submit"> View Working Days </button> -->
+  <button class="checkBoxButtonAccept" type="submit" value="submit"> Accept </button>
+  <!-- <button class="checkBoxButtonEdit" type="submit" value="submit"> Edit/Update Working Days </button> -->
+  </h2>
+</form>
 
-
-  <fieldset>
-      <legend>Please select one of the following</legend>
-      <input type="radio" name="action" id="track" value="track" /><label for="track">Track Submission</label><br />
-      <input type="radio" name="action" id="event" value="event"  /><label for="event">Events and Artist booking</label><br />
-      <input type="radio" name="action" id="message" value="message" /><label for="message">Message us</label><br />
-  </fieldset>
-
-  <div>
-<input type="radio" name="radio" id="radio2" class="radio"/>
-<label for="radio2">Second Option</label>
+<div class="flashMessageCreate">
+{{messages.error}}
 </div>
 
-<div>
-<input type="radio" name="radio" id="radio3" class="radio"/>
-<label for="radio3">Third Option</label>
-</div>
-
-<div>
-<input type="radio" name="radio" id="radio4" class="radio"/>
-<label for="radio4">Fourth Option</label>
-</div>
+</body>
+</html>
