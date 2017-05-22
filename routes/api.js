@@ -49,11 +49,72 @@ router.get('/login', function (req, res){
 res.render('login');
 });
 
-router.get('/waiter/:id', function (req, res, next){
-  Employee.findOne({empID: req.params.id }).then(function(employee){
+router.post('/waiter/:id/select', function (req, res, next){
+  var availability = req.body.selectDay;
+  var employee = req.employees;
+  var sunMessg = "Not Available";
+  var monMessg = "Not Available";
+  var tueMessg = "Not Available";
+  var wedMessg = "Not Available";
+  var thurMessg = "Not Available";
+  var friMessg = "Not Available";
+  var satMessg = "Not Available";
 
-  res.render('waiter', {output: req.params.id, employee});
-  });
+
+
+  console.log(availability);
+  for (i=0; i<availability.length; i++){
+    if (availability[i] === 'Sunday'){
+      employee.availability.Sunday = true;
+      sunMessg = "Available";
+    }
+    else if (availability[i] === "Monday"){
+      employee.availability.Monday = true;
+      monMessg = "Available";
+    }
+     else if (availability[i] === "Tuesday"){
+      employee.availability.Tuesday = true;
+      tueMessg = "Available";
+    }
+     else if (availability[i] === "Wednesday"){
+      employee.availability.Wednesday = true;
+      wedMessg = "Available";
+    }
+     else if (availability[i] === "Thursday"){
+      employee.availability.Thursday = true;
+      thurMessg = "Available";
+    }
+     else if (availability[i] === "Friday"){
+      employee.availability.Friday = true;
+      friMessg = "Available";
+    }
+     else if (availability[i] === "Saturday"){
+      employee.availability.Saturday = true;
+      satMessg = "Available";
+    }
+  };
+
+
+employee.save();
+res.render('selectedDays', {output:req.employees, sunMessg, monMessg, tueMessg, wedMessg, thurMessg, friMessg, satMessg});
+});
+
+
+
+router.param('id', function (req, res, next, id){
+  Employee.findOne({empID: id}).then(function(employee){
+  {
+    req.employees = employee;
+    next();
+  }
+}).catch(next)
+});
+
+
+
+router.get('/waiter/:id', function (req, res, next){
+
+res.render('waiter', {output:req.employees});
 });
 
 router.post('/waiter/submit',urlencodedParser, function (req, res, next){
@@ -61,7 +122,6 @@ router.post('/waiter/submit',urlencodedParser, function (req, res, next){
 
   res.redirect('/waiter/' + id);
 });
-
 
 
 

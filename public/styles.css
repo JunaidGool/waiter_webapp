@@ -41,16 +41,16 @@ button{
 }
 
 h1 {
-    position: relative;
-    left: 40%;
+    /*position: relative;
+    left: 40%;*/
     /*top: 300px;*/
     text-shadow: 3px 2px #f0b78f;
     font-weight: normal;
 }
 
 h2 {
-    position: relative;
-    left: 40%;
+    /*position: relative;
+    left: 40%;*/
     /*top: 300px;*/
     text-shadow: 3px 2px #f0b78f;
     font-weight: normal;
@@ -106,7 +106,7 @@ table, th, td {
 
 .checkBoxForm {
   position: relative;
-  left: -80px;
+  left: -380px;
 }
 
 .empIDOutput {
@@ -125,6 +125,10 @@ table, th, td {
 
 .checkBoxButtonAccept {
   margin-right: 300px;
+}
+
+.signIn {
+    margin-left: 375px;
 }
 
 /*img {

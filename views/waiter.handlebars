@@ -2,9 +2,9 @@
 <a href="/create-new-account">Create Account</a>
 <a href="/login">Sign IN</a>
 
-<h1 class="empIDOutput"> Employee ID: {{output}} </h1>
-<h1 class="empNameOutput"> Welcome {{employee.name}} </h1>
-  <form class="checkBoxForm " action="/waiter/:id" method="post">
+<h1 class="empIDOutput"> Employee ID: {{output.empID}} </h1>
+<h1 class="empNameOutput"> Welcome {{output.name}} </h1>
+  <form class="checkBoxForm " action="/waiter/{{output.empID}}/select" method="post">
   <h2>please select the days you will be working </h2>
   <h2>
   <input type="checkbox" name="selectDay" value="Sunday">Sunday<br>

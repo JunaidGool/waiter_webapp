@@ -1,0 +1,41 @@
+<h1 class="empIDOutput"> Employee ID: {{output.empID}} </h1>
+<h1 class="empNameOutput">  Welcome {{output.name}} </h1>
+<h1 class="empNameOutput">  Your Schedule for the week </h1>
+
+<h1 class="tableSchedule">
+<table>
+    <thead>
+        <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>{{sunMessg}} </td>
+            <td>{{monMessg}} </td>
+            <td>{{tueMessg}} </td>
+            <td>{{wedMessg}} </td>
+            <td>{{thurMessg}} </td>
+            <td>{{friMessg}} </td>
+            <td>{{satMessg}} </td>
+        </tr>
+
+    </tbody>
+</table>
+</h1>
+
+<!-- <form action="/waiter/{{output.empID}}" method="post">
+<button class="" type="submit" value="submit"> Edit </button>
+</form> -->
+
+<div class="flashMessageCreate">
+{{messages.error}}
+</div>
