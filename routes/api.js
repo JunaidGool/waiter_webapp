@@ -60,40 +60,71 @@ router.post('/waiter/:id/select', function (req, res, next){
   var friMessg = "Not Available";
   var satMessg = "Not Available";
 
+// re-set availabilty to false for update
+employee.availability.Sunday = false;
+employee.availability.Monday = false;
+employee.availability.Tuesday = false;
+employee.availability.Wednesday = false;
+employee.availability.Thursday = false;
+employee.availability.Friday = false;
+employee.availability.Saturday = false;
 
+// validate for single check box selections
+if (availability === 'Sunday'){
+  employee.availability.Sunday = true;
+  sunMessg = "Available";
+} else if (availability === 'Monday'){
+  employee.availability.Monday = true;
+  monMessg = "Available";
+} else if (availability === 'Tuesday'){
+  employee.availability.Tuesday = true;
+  tueMessg = "Available";
+} else if (availability === 'Wednesday'){
+  employee.availability.Wednesday = true;
+  wedMessg = "Available";
+} else if (availability === "Thursday"){
+  employee.availability.Thursday = true;
+  thurMessg = "Available";
+} else if (availability === 'Friday'){
+  employee.availability.Friday = true;
+  friMessg = "Available";
+} else if (availability === 'Saturday'){
+  employee.availability.Saturday = true;
+  satMessg = "Available";
+}
 
-  console.log(availability);
+// validate for multiple check box selections
   for (i=0; i<availability.length; i++){
     if (availability[i] === 'Sunday'){
       employee.availability.Sunday = true;
       sunMessg = "Available";
     }
-    if (availability[i] === "Monday"){
+    else if (availability[i] === "Monday"){
       employee.availability.Monday = true;
       monMessg = "Available";
     }
-     if (availability[i] === "Tuesday"){
+     else if (availability[i] === "Tuesday"){
       employee.availability.Tuesday = true;
       tueMessg = "Available";
     }
-     if (availability[i] === "Wednesday"){
+     else if (availability[i] === "Wednesday"){
       employee.availability.Wednesday = true;
       wedMessg = "Available";
     }
-     if (availability[i] === "Thursday"){
+     else if (availability[i] === "Thursday"){
       employee.availability.Thursday = true;
       thurMessg = "Available";
     }
-     if (availability[i] === "Friday"){
+     else if (availability[i] === "Friday"){
       employee.availability.Friday = true;
       friMessg = "Available";
     }
-     if (availability[i] === "Saturday"){
+     else if (availability[i] === "Saturday"){
       employee.availability.Saturday = true;
       satMessg = "Available";
     }
   };
-
+  
 
 employee.save();
 res.render('selectedDays', {output:req.employees, sunMessg, monMessg, tueMessg, wedMessg, thurMessg, friMessg, satMessg});
