@@ -68,27 +68,27 @@ router.post('/waiter/:id/select', function (req, res, next){
       employee.availability.Sunday = true;
       sunMessg = "Available";
     }
-    else if (availability[i] === "Monday"){
+    if (availability[i] === "Monday"){
       employee.availability.Monday = true;
       monMessg = "Available";
     }
-     else if (availability[i] === "Tuesday"){
+     if (availability[i] === "Tuesday"){
       employee.availability.Tuesday = true;
       tueMessg = "Available";
     }
-     else if (availability[i] === "Wednesday"){
+     if (availability[i] === "Wednesday"){
       employee.availability.Wednesday = true;
       wedMessg = "Available";
     }
-     else if (availability[i] === "Thursday"){
+     if (availability[i] === "Thursday"){
       employee.availability.Thursday = true;
       thurMessg = "Available";
     }
-     else if (availability[i] === "Friday"){
+     if (availability[i] === "Friday"){
       employee.availability.Friday = true;
       friMessg = "Available";
     }
-     else if (availability[i] === "Saturday"){
+     if (availability[i] === "Saturday"){
       employee.availability.Saturday = true;
       satMessg = "Available";
     }
@@ -98,6 +98,7 @@ router.post('/waiter/:id/select', function (req, res, next){
 employee.save();
 res.render('selectedDays', {output:req.employees, sunMessg, monMessg, tueMessg, wedMessg, thurMessg, friMessg, satMessg});
 });
+
 
 
 
@@ -119,11 +120,18 @@ res.render('waiter', {output:req.employees});
 
 router.post('/waiter/submit',urlencodedParser, function (req, res, next){
   var id = req.body.id;
-
+  if (id.startsWith(10)){
   res.redirect('/waiter/' + id);
+  }
+  else if (id.startsWith(90)){
+  res.redirect('/admin')
+  }
 });
 
+router.get('/admin', function (req, res, next){
 
+  res.render('admin')
+})
 
 
 

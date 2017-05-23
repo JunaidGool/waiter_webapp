@@ -1,3 +1,10 @@
+
+
+<h2>
+<a href="/waiter/{{output.empID}}">Update</a>
+<a href="/home">Log-off</a>
+</h2>
+
 <h1 class="empIDOutput"> Employee ID: {{output.empID}} </h1>
 <h1 class="empNameOutput">  Welcome {{output.name}} </h1>
 <h1 class="empNameOutput">  Your Schedule for the week </h1>
@@ -17,7 +24,6 @@
         </tr>
     </thead>
     <tbody>
-
         <tr>
             <td>{{sunMessg}} </td>
             <td>{{monMessg}} </td>
@@ -32,9 +38,7 @@
 </table>
 </h1>
 
-<form action="/waiter/{{output.empID}}" method="post">
-<button class="" type="submit" value="submit"> Edit </button>
-</form>
+
 
 <div class="flashMessageCreate">
 {{messages.error}}
