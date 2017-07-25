@@ -21,7 +21,6 @@ input[type="text"]{
     right: 40%;
     /*top: 300px;*/
     box-shadow: 10px 10px 5px #4d2800;
-
 }
 
 button{
@@ -109,20 +108,6 @@ table, th, td {
   left: -380px;
 }
 
-.empIDOutput {
-  /*position: relative;
-  right: 100px;*/
-}
-
-.empNameOutput {
-  /*margin-right: 50px;*/
-
-}
-
-/*.checkBoxButtonView {
-  margin-left: 30px;
-}*/
-
 .checkBoxButtonAccept {
   margin-right: 300px;
 }
@@ -131,16 +116,92 @@ table, th, td {
     margin-left: 375px;
 }
 
-/*img {
-    max-width: 100%;
-    max-height: 100%;
-}*/
+.days{
+  display: -webkit-inline-box;
+}
 
-/*.steaming {
-    max-width: 100%;
-    height: 200px;
-    background-image: url('steaming.jpg','coffee-image1.jpg','coffee-image2.jpg','coffee-image3.jpg', 'coffee-image4.jpg', 'coffee-image5.jpg' );
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 1px solid black;
-}*/
+.sufficient {
+  font-size: 1em;
+  background-color: white;
+  font-family: 'Shift', sans-serif;
+  width: 10%;
+  height: 180px;
+  padding: 25px;
+  overflow: hidden;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.in-sufficient {
+  font-size: 1em;
+  background-color: #ffff66;
+  font-family: 'Shift', sans-serif;
+  width: 10%;
+  height: 180px;
+  padding: 25px;
+  overflow: hidden;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.sufficient {
+  font-size: 1em;
+  background-color:  #66ff99;
+  font-family: 'Shift', sans-serif;
+  width: 10%;
+  height: 180px;
+  padding: 25px;
+  overflow: hidden;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.overloaded {
+  font-size: 1em;
+  background-color: #ff6666;
+  font-family: 'Shift', sans-serif;
+  width: 10%;
+  height: 180px;
+  padding: 25px;
+  overflow: hidden;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.sufficent-map {
+  font-size: 12px;
+  background-color: #66ff99;
+  font-family: 'Shift', sans-serif;
+width: 11%;
+  height: 50px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.in-sufficent-map {
+  font-size: 12px;
+  background-color: #ffff66;
+  font-family: 'Shift', sans-serif;
+  width: 11%;
+  height: 50px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.overloaded-map {
+  font-size: 12px;
+  background-color: #ff6666;
+  font-family: 'Shift', sans-serif;
+  width: 11%;
+  height: 50px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.waiterform {
+    position: relative;
+    left: 40%;
+    
+    
+}

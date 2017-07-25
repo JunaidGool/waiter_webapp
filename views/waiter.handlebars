@@ -5,6 +5,8 @@
 
 <h1 class="empIDOutput"> Employee ID: {{output.empID}} </h1>
 <h1 class="empNameOutput"> Welcome {{output.name}} </h1>
+
+<div class="waiterform">
   <form class="checkBoxForm " action="/waiter/{{output.empID}}/select" method="post">
   <h2>please select the days you will be working </h2>
   <h2>
@@ -23,6 +25,7 @@
 
 <div class="flashMessageCreate">
 {{messages.error}}
+</div>
 </div>
 
 </body>

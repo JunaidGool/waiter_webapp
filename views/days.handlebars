@@ -1,0 +1,82 @@
+
+<div class="sufficent-map">
+  <h1>Sufficient</h1>
+</div>
+
+<div class="in-sufficent-map">
+  <h1>In-Sufficient</h1>
+</div>
+
+<div class="overloaded-map">
+  <h1>Over-Staffed</h1>
+</div>
+
+
+<div class="days">
+  <div class= {{sundayShiftStatus}}>
+    <h1>Sunday</h1>
+    <ul>
+      {{#each sundayStaff}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class= {{mondayShiftStatus}}>
+    <h1>Monday</h1>
+    <ul>
+      {{#each mondayStaff}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class= {{tuesdayShiftStatus}}>
+    <h1>Tuesday</h1>
+    <ul>
+      {{#each tuesdayStaff}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class= {{wednesdayShiftStatus}}>
+    <h1>Wednesday</h1>
+    <ul>
+      {{#each wednesdayStaff}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class= {{thursdayShiftStatus}}>
+    <h1>Thursday</h1>
+    <ul>
+      {{#each thursdayStaff}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class= {{fridayShiftStatus}}>
+    <h1>Friday</h1>
+    <ul>
+      {{#each fridayStaff}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class= {{saturdayShiftStatus}}>
+    <h1>Saturday</h1>
+    <ul>
+      {{#each saturdayStaff}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+<form id="reset-form" method="post" action="/days">
+<button type="submit" value="submit"> Reset </button><br><br><br><br>
+</form>
