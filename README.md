@@ -21,7 +21,6 @@
 1. Access the package.json file, this file contains all the required dependencies to be installed.
    Below is what the package.json file will look like.
    
-   ```javascript
    {
   "name": "waiter_webapp",
   "version": "1.0.0",
@@ -45,22 +44,25 @@
     "mongoose": "^4.9.10"
   }
 }
-```
 
 2. In the command line, navigate to the project working folder.
-3. Input ```javascript npm install --save ``` in the command line.<br/>
-   This will install all the required dependencies.<br/>
+3. Input 
+
+npm install --save 
+
+in the command line. This will install all the required dependencies.<br/>
    
 ### Starting the APP
 1. Open mongoDB and get your server started.<br/>
 2. In the command line, navigate to the project working folder.Once you are in the appropriate folder
    input this command
+   
    ```javascript 
    nodemon 
    ```
    You should now see the following message displayed<br/>
    ```javascript 
-    "Now listening to Port Number: 9001 "
+    "Now listening to Port Number: 9001"
     ```
     The Api is now succesfully running !! <br/>
     You are now able to add, view and update stock using postman and have the option to view your data within your database using Robomongo.
