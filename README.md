@@ -87,7 +87,13 @@ GET | /days 	  | Show the administrator which days waiters can work.
    ```
    ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/waiter_home.GIF)
    
-2. This is the login page. The administrator or the waiter will enter their login details to view their related pages and perform their required tasks. To enter the administrators page, input "90".
+   This is the home page. It gives you a brief descripion on what is required when inputting the login details.<br/>
+   To enter the administrators page, input "90". All waiter id's must start with the digits "10". <br/>
+   Click the Sign In button.
+   
+2. Once you have clicked on the Sign In button, you will be directed to the login page. The administrator or the waiter will enter their login details to view their related pages and perform their required tasks. 
+
+3.
 
 
 
