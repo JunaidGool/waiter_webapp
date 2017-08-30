@@ -1,15 +1,24 @@
 
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;" >
 
-<h2>
-<a href="/waiter/{{output.empID}}">Update</a>
-<a href="/home">Log-off</a>
-</h2>
 
-<h1 class="empIDOutput"> Employee ID: {{output.empID}} </h1>
-<h1 class="empNameOutput">  Welcome {{output.name}} </h1>
-<h1 class="empNameOutput">  Your Schedule for the week </h1>
-<h1 class="tableSchedule">
-<table>
+<div class="container-fluid">
+  <div class="row" border='1px solid red' style="">
+<button class="btn btn-success"><a href="/waiter/{{output.empID}}">Update</a></button>
+<button class="btn btn-success"><a href="/home">Log-off</a></button>
+</div>
+</div>
+
+
+<h3 class="empIDOutput"> Employee ID: {{output.empID}} </h3>
+<h3 class="empNameOutput">  Welcome {{output.name}} </h3>
+<h3 class="empNameOutput">  Your Schedule for the week </h3>
+
+
+<div class="container-fluid">
+  <div class="row" border='1px solid red' style="">
+<div class="table-responsive">
+<table class="table">
     <thead>
         <tr>
             <th>Sunday</th>
@@ -24,15 +33,18 @@
     </thead>
     <tbody>
         <tr>
-            <td>{{sunMessg}} {{output.availability.Sunday}} </td>
-            <td>{{monMessg}} {{output.availability.Monday}} </td>
-            <td>{{tueMessg}} {{output.availability.Tuesday}}</td>
-            <td>{{wedMessg}} {{output.availability.Wednesday}}</td>
-            <td>{{thurMessg}} {{output.availability.Thursday}}</td>
-            <td>{{friMessg}} {{output.availability.Friday}}</td>
-            <td>{{satMessg}} {{output.availability.Saturday}}</td>
+            <td>{{sunMessg}}</td>
+            <td>{{monMessg}}</td>
+            <td>{{tueMessg}}</td>
+            <td>{{wedMessg}}</td>
+            <td>{{thurMessg}}</td>
+            <td>{{friMessg}}</td>
+            <td>{{satMessg}}</td>
         </tr>
 
     </tbody>
 </table>
-</h1>
+</div>
+</div>
+</div>
+</div>

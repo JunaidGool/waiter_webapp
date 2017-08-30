@@ -1,36 +1,42 @@
-<div class="steaming">
-<img src="steaming.jpg" class="steamingImg">
-<img src="coffee-image1.jpg" class="steamingImg">
-<img src="coffee-image2.jpg" class="steamingImg">
-<img src="coffee-image3.jpg" class="steamingImg">
-<img src="coffee-image4.jpg" class="steamingImg">
-<img src="coffee-image5.jpg" class="steamingImg">
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;" >
+
+  <div class="container-fluid">
+    <div class="row" border='1px solid red'>
+      <div class="col-xs-4 col-sm-3 col-md-2" style="width:100%;">
+
+        <img src="steaming.jpg" width="150" height="150">
+        <img src="coffee-image1.jpg" width="150" height="150">
+        <img src="coffee-image2.jpg" width="150" height="150">
+        <img src="coffee-image3.jpg" width="150" height="150">
+        <img src="coffee-image4.jpg" width="150" height="150">
+        <img src="coffee-image5.jpg" width="150" height="150">
+
+    </div>
+  </div>
+  </div>
+  <br><br>
+  
+<div class="container-fluid">
+  <div class="row" border='1px solid red' style="">
+
+<button class="btn btn-success"><a href="/login">Sign In</a></button>
+<button class="btn btn-success"><a href="/create-new-account">New Account</a></button>
+<button class="btn btn-success"><a href="/home">Log-off</a></button>
+
+</div>
 </div>
 
-<h2>
-<a href="/login">Sign In</a>
-<a href="/create-new-account">New Account</a>
-<a href="/home">Log-off</a>
-</h2>
-<br><br><br><br>
-<table>
+<div class="container-fluid">
+  <div class="row" border='1px solid red' style="">
+
+<div class="table-responsive">
+<table class="table">
     <thead>
         <tr>
             <th>Employee ID</th>
             <th>Employee Name</th>
             <th>Employee Position</th>
-            <!-- <th colspan="7">Employee Availabilty</th>
-        </tr>
-        <tr>
-            <th colspan="3"></th> -->
-
-            <!-- <th>Sunday</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th> -->
         </tr>
     </thead>
     <tbody>
@@ -39,15 +45,17 @@
             <td>{{this.empID}} </td>
             <td>{{this.name}} </td>
             <td>{{this.position}} </td>
-            <!-- <td>{{this.availability.Sunday}} </td>
-            <td>{{this.availability.Monday}} </td>
-            <td>{{this.availability.Tuesday}} </td>
-            <td>{{this.availability.Wednesday}} </td>
-            <td>{{this.availability.Thursday}} </td>
-            <td>{{this.availability.Friday}} </td>
-            <td>{{this.availability.Saturday}} </td> -->
+
           {{/each}}
         </tr>
 
     </tbody>
 </table>
+
+</div>
+
+</div>
+
+</div>
+
+</div>

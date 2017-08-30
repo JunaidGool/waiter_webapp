@@ -1,109 +1,6 @@
-body{
-    background: #ea9a62;
-    font-family: tahoma;
-    margin: 10px 30px;
-}
 
-form{
-    max-width: 1000px;
-    margin: 30px auto;
-}
 
-input[type="text"]{
-    position: relative;
-    width: 29%;
-    padding:10px;
-    background:#ffffcc;
-    border: 0;
-    font-size: 20px;
-    color: #989898;
-    float: right;
-    right: 40%;
-    /*top: 300px;*/
-    box-shadow: 10px 10px 5px #4d2800;
-}
-
-button{
-    position: relative;
-    padding: 10px;
-    width: 30%;
-    background: #990000;
-    border: 0;
-    box-sizing: border-box;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    float: right;
-    right: 40%;
-    /*top: 300px;*/
-    box-shadow: 10px 10px 5px #4d2800;
-}
-
-h1 {
-    /*position: relative;
-    left: 40%;*/
-    /*top: 300px;*/
-    text-shadow: 3px 2px #f0b78f;
-    font-weight: normal;
-}
-
-h2 {
-    /*position: relative;
-    left: 40%;*/
-    /*top: 300px;*/
-    text-shadow: 3px 2px #f0b78f;
-    font-weight: normal;
-}
-
-h3 {
-    position: relative;
-    left: 40%;
-    /*top: 300px;*/
-    text-shadow: 3px 2px #f0b78f;
-    font-weight: normal;
-}
-
-.createAccText {
-  position: relative;
-  left: 300px;
-}
-
-.flashMessageCreate{
-  position: relative;
-  text-shadow: 3px 2px #f0b78f;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: red;
-  left: 600px;
-}
-
-.deleteAccText{
-  position: relative;
-  left: 350px;
-}
-
-th, td {
-    font-weight:normal;
-    padding:5px;
-    width:120px;
-    vertical-align:top;
-}
-th {
-    background:#00B0F0;
-}
-tr + tr th, tbody th {
-    background:#DAEEF3;
-}
-tr + tr, tbody {
-    text-align:center
-}
-table, th, td {
-    border:solid 1px;
-    border-collapse:collapse;
-    table-layout:fixed;
-}
-
-.checkBoxForm {
+/*.checkBoxForm {
   position: relative;
   left: -380px;
 }
@@ -114,7 +11,7 @@ table, th, td {
 
 .signIn {
     margin-left: 375px;
-}
+}*/
 
 .days{
   display: -webkit-inline-box;
@@ -137,7 +34,7 @@ table, th, td {
   font-size: 1em;
   background-color: #ffff66;
   font-family: 'Shift', sans-serif;
-  width: 10%;
+  width: 11%;
   height: 180px;
   padding: 25px;
   overflow: hidden;
@@ -177,8 +74,8 @@ table, th, td {
   background-color: #66ff99;
   font-family: 'Shift', sans-serif;
 width: 11%;
-  height: 50px;
-  box-shadow: 10px 10px 5px grey;
+  height: 25px;
+  /*box-shadow: 10px 10px 5px grey;*/
 }
 
 .in-sufficent-map {
@@ -186,8 +83,8 @@ width: 11%;
   background-color: #ffff66;
   font-family: 'Shift', sans-serif;
   width: 11%;
-  height: 50px;
-  box-shadow: 10px 10px 5px grey;
+  height: 25px;
+  /*box-shadow: 10px 10px 5px grey;*/
 }
 
 .overloaded-map {
@@ -195,13 +92,6 @@ width: 11%;
   background-color: #ff6666;
   font-family: 'Shift', sans-serif;
   width: 11%;
-  height: 50px;
-  box-shadow: 10px 10px 5px grey;
-}
-
-.waiterform {
-    position: relative;
-    left: 40%;
-    
-    
+  height: 25px;
+  /*box-shadow: 10px 10px 5px grey;*/
 }

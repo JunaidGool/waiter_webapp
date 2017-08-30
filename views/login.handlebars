@@ -1,28 +1,38 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
 
+  <div class="container-fluid">
+    <div class="row" border='1px solid red'>
+      <div class="col-xs-4 col-sm-3 col-md-2" style="width:100%;">
 
+        <img src="steaming.jpg" width="150" height="150">
+        <img src="coffee-image1.jpg" width="150" height="150">
+        <img src="coffee-image2.jpg" width="150" height="150">
+        <img src="coffee-image3.jpg" width="150" height="150">
+        <img src="coffee-image4.jpg" width="150" height="150">
+        <img src="coffee-image5.jpg" width="150" height="150">
 
-  </head>
-  <body>
-    <div class="steaming">
-    <img src="steaming.jpg" class="steamingImg">
-    <img src="coffee-image1.jpg" class="steamingImg">
-    <img src="coffee-image2.jpg" class="steamingImg">
-    <img src="coffee-image3.jpg" class="steamingImg">
-    <img src="coffee-image4.jpg" class="steamingImg">
-    <img src="coffee-image5.jpg" class="steamingImg">
     </div>
-  <!-- <a href="/view-employees">View Employees</a>
-  <a href="/create-new-account">Create Account</a> -->
+  </div>
+  </div>
+  <br><br>
 
-    <form id="login-form" method="post" action="/waiter/submit">
-    <h1 class="signIn"> Sign In </h1>
-    <input type="text"  name="id" placeholder="Please Enter Login" required> </input><br><br><br><br>
-    <button type="submit" value="submit"> Next </button><br><br><br><br>
-    </form>
-  </body>
-</html>
+  <div class="container-fluid">
+    <div class="row" border='1px solid red' style="">
+      <div class="col-xs-12 col-md-6 col-lg-8" id="" style="">
+        <button class="btn btn-success"><a href="/view-employees">View Employees</a></button>
+
+        <h3 class="signIn">Login</h3>
+        <form id="login-form" method="post" action="/waiter/submit">
+
+          <div class="form-group">
+            <input class="form-group" type="text" name="id" placeholder="Please Enter Login" required>
+          </div>
+
+          <button class="btn btn-success" type="submit" value="submit">Submit</button>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</div>

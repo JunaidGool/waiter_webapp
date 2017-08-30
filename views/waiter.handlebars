@@ -1,32 +1,53 @@
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
 
-<h2>
-<a href="/home">Log Out</a>
-</h2>
 
-<h1 class="empIDOutput"> Employee ID: {{output.empID}} </h1>
-<h1 class="empNameOutput"> Welcome {{output.name}} </h1>
 
-<div class="waiterform">
-  <form class="checkBoxForm " action="/waiter/{{output.empID}}/select" method="post">
-  <h2>please select the days you will be working </h2>
-  <h2>
-  <input type="checkbox" name="selectDay" value="Sunday">Sunday<br>
-  <input type="checkbox" name="selectDay" value="Monday">Monday<br>
-  <input type="checkbox" name="selectDay" value="Tuesday">Tuesday<br>
-  <input type="checkbox" name="selectDay" value="Wednesday">Wednesday<br>
-  <input type="checkbox" name="selectDay" value="Thursday">Thursday<br>
-  <input type="checkbox" name="selectDay" value="Friday">Friday<br>
-  <input type="checkbox" name="selectDay" value="Saturday">Saturday<br><br>
-  <!-- <button class="checkBoxButtonView" type="submit" value="submit"> View Working Days </button> -->
-  <button class="checkBoxButtonAccept" type="submit" value="submit"> Accept </button>
-  <!-- <button class="checkBoxButtonEdit" type="submit" value="submit"> Edit/Update Working Days </button> -->
-  </h2>
-</form>
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-6 col-lg-8" id="" style="">
+      <button class="btn btn-success"><a href="/home">Log Out</a></button>
 
-<div class="flashMessageCreate">
-{{messages.error}}
+        <h3 class="empIDOutput"> Employee ID: {{output.empID}} </h3>
+        <h3 class="empNameOutput"> Welcome {{output.name}} please select the days you will be working </h3>
+
+
+      <form class="checkBoxForm " action="/waiter/{{output.empID}}/select" method="post">
+
+        <div class="form-group">
+          <input class="form-group" type="checkbox" name="selectDay" value="Sunday">Sunday<br>
+        </div>
+
+        <div class="form-group">
+          <input class="form-group" type="checkbox" name="selectDay" value="Monday">Monday<br>
+        </div>
+
+        <div class="form-group">
+          <input class="form-group" type="checkbox" name="selectDay" value="Tuesday">Tuesday<br>
+        </div>
+
+        <div class="form-group">
+          <input class="form-group" type="checkbox" name="selectDay" value="Wednesday">Wednesday<br>
+        </div>
+
+        <div class="form-group">
+          <input class="form-group" type="checkbox" name="selectDay" value="Thursday">Thursday<br>
+        </div>
+
+        <div class="form-group">
+          <input class="form-group" type="checkbox" name="selectDay" value="Friday">Friday<br>
+        </div>
+
+        <div class="form-group">
+          <input class="form-group" type="checkbox" name="selectDay" value="Saturday">Saturday<br>
+        </div>
+
+        <button class="btn btn-success checkBoxButtonAccept" type="submit" value="submit"> Accept </button>
+      </form>
+
+      <div class="flashMessageCreate" style="color:red;">
+
+      {{messages.error}}
+
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-
-</body>
-</html>

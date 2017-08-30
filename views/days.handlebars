@@ -1,20 +1,33 @@
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;" >
+<div class="container-fluid">
+  <div class="row" border='1px solid red'>
+    <div class="col-xs-4 col-sm-3 col-md-2" style="width:100%;">
+
+      <img src="steaming.jpg" width="150" height="150">
+      <img src="coffee-image1.jpg" width="150" height="150">
+      <img src="coffee-image2.jpg" width="150" height="150">
+      <img src="coffee-image3.jpg" width="150" height="150">
+      <img src="coffee-image4.jpg" width="150" height="150">
+      <img src="coffee-image5.jpg" width="150" height="150">
+  </div>
+</div>
 
 <div class="sufficent-map">
-  <h1>Sufficient</h1>
+  <h4>Sufficient</h4>
 </div>
 
 <div class="in-sufficent-map">
-  <h1>In-Sufficient</h1>
+  <h4>In-Sufficient</h4>
 </div>
 
 <div class="overloaded-map">
-  <h1>Over-Staffed</h1>
+  <h4>Over-Staffed</h4>
 </div>
 
 
 <div class="days">
   <div class= {{sundayShiftStatus}}>
-    <h1>Sunday</h1>
+    <h4>Sunday</h4>
     <ul>
       {{#each sundayStaff}}
         <li>{{this}}</li>
@@ -23,7 +36,7 @@
   </div>
 
   <div class= {{mondayShiftStatus}}>
-    <h1>Monday</h1>
+    <h4>Monday</h4>
     <ul>
       {{#each mondayStaff}}
         <li>{{this}}</li>
@@ -32,7 +45,7 @@
   </div>
 
   <div class= {{tuesdayShiftStatus}}>
-    <h1>Tuesday</h1>
+    <h4>Tuesday</h4>
     <ul>
       {{#each tuesdayStaff}}
         <li>{{this}}</li>
@@ -41,7 +54,7 @@
   </div>
 
   <div class= {{wednesdayShiftStatus}}>
-    <h1>Wednesday</h1>
+    <h4>Wednesday</h4>
     <ul>
       {{#each wednesdayStaff}}
         <li>{{this}}</li>
@@ -50,7 +63,7 @@
   </div>
 
   <div class= {{thursdayShiftStatus}}>
-    <h1>Thursday</h1>
+    <h4>Thursday</h4>
     <ul>
       {{#each thursdayStaff}}
         <li>{{this}}</li>
@@ -59,7 +72,7 @@
   </div>
 
   <div class= {{fridayShiftStatus}}>
-    <h1>Friday</h1>
+    <h4>Friday</h4>
     <ul>
       {{#each fridayStaff}}
         <li>{{this}}</li>
@@ -68,7 +81,7 @@
   </div>
 
   <div class= {{saturdayShiftStatus}}>
-    <h1>Saturday</h1>
+    <h4>Saturday</h4>
     <ul>
       {{#each saturdayStaff}}
         <li>{{this}}</li>
@@ -77,6 +90,18 @@
   </div>
 </div>
 
-<form id="reset-form" method="post" action="/days">
-<button type="submit" value="submit"> Reset </button><br><br><br><br>
-</form>
+</div>
+
+<div class="container-fluid">
+  <div class="row" border='1px solid red' style="">
+    <div class="col-xs-12 col-md-6 col-lg-8" id="" style="">
+
+      <form id="reset-form" method="post" action="/days">
+        <button class="btn btn-success" type="submit" value="submit">Reset</button>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+</div>

@@ -1,15 +1,45 @@
-<h2>
-<a href="/view-employees">View Employees</a>
-</h2>
+<div style="max-width: 1200px; margin: 0 auto; padding: 10px;">
 
-<form id="create-form" method="post" action="/create-new-account">
-<h1 class="createAccText"> Create New Account </h1>
-<input type="text"  name="empId" placeholder="Please Enter Employee ID" required> </input><br><br><br><br>
-<input type="text"  name="empName" placeholder="Please Enter Employee Name" required> </input><br><br><br><br>
-<input type="text"  name="empPosition" placeholder="Please Enter Employee Position" required> </input><br><br><br><br>
-<button type="submit" value="submit"> Accept </button><br><br><br><br>
-</form>
+  <div class="container-fluid">
+    <div class="row" border='1px solid red'>
+      <div class="col-xs-4 col-sm-3 col-md-2" style="width:100%;">
 
-<div class="flashMessageCreate">
-{{messages.error}}
+        <img src="steaming.jpg" width="150" height="150">
+        <img src="coffee-image1.jpg" width="150" height="150">
+        <img src="coffee-image2.jpg" width="150" height="150">
+        <img src="coffee-image3.jpg" width="150" height="150">
+        <img src="coffee-image4.jpg" width="150" height="150">
+        <img src="coffee-image5.jpg" width="150" height="150">
+
+    </div>
+  </div>
+  </div>
+  <br><br>
+  
+  <div class="container-fluid">
+    <div class="col-xs-12 col-md-6 col-lg-8" id="" style="">
+      <button class="btn btn-success"><a href="/view-employees">View Employees</a></button>
+
+      <h3 class="createAccText"> Create New Account </h3>
+      <form id="create-form" method="post" action="/create-new-account">
+
+        <div class="form-group">
+          <input class="form-group" type="text" name="empId" placeholder="Please Enter ID" required>
+        </div>
+        <div class="form-group">
+          <input class="form-group" type="text" name="empName" placeholder="Please Enter Name" required/>
+        </div>
+        <div class="form-group">
+          <input class="form-group" type="text" name="empPosition" placeholder="Please Enter Position" required/>
+        </div>
+        <button class="btn btn-success" type="submit" value="submit"> Accept </button>
+      </form>
+
+      <div class="flashMessageCreate" style="color:red;">
+
+        {{messages.error}}
+
+      </div>
+    </div>
+  </div>
 </div>
