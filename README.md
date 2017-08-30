@@ -20,7 +20,7 @@
 ### Installing
 1. Access the package.json file, this file contains all the required dependencies to be installed.
    Below is what the package.json file will look like.
-   
+```javascript
    {
   "name": "waiter_webapp",
   "version": "1.0.0",
@@ -44,7 +44,7 @@
     "mongoose": "^4.9.10"
   }
 }
-
+```
 
 2. In the command line, navigate to the project working folder.
 3. Input 
