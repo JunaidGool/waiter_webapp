@@ -67,5 +67,14 @@ in the command line. This will install all the required dependencies.<br/>
     ```
     The Api is now succesfully running !! <br/>
     You are now able to add, view and update stock using postman and have the option to view your data within your database using Robomongo.
+    
+### Understanding the Routes
+
+HTTP Method | Route Name | Description
+------------ | ------------- | ---------
+GET | /waiters/:username	 	  | Show waiters a screen where they can select the days they can work on.
+POST | /waiters/:username		 	  | Send the days a waiter can work to the server.
+GET | /days 	  | Show the administrator which days waiters can work.
+
 
 
