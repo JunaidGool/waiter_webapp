@@ -121,16 +121,4 @@ GET | /days 	  | Show the administrator which days waiters can work.
 
 3. Click "Accept". The days will be registered and the waiter will be redirected to a page that displays all the days that the waiter selected.
 
-![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/existingID's.GIF)
-
-
-
-
-
-
-
-
-
-
-
-
+![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/printout.GIF)
