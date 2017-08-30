@@ -92,7 +92,7 @@ GET | /days 	  | Show the administrator which days waiters can work.
    Click the Sign In button.
    
 2. Once you have clicked on the Sign In button, you will be redirected to the login page. The administrator or the waiter will enter their login details to view their related pages and perform their required tasks.
-![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/waiter_home.GIF)
+![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/login.GIF)
 
 
 
