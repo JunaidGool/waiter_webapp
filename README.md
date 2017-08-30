@@ -98,6 +98,12 @@ GET | /days 	  | Show the administrator which days waiters can work.
 3. To view existing employee login id's click "View Employees". To access the administration page, input "90"
 
 #### Administrator Section
+1. The adminstrator section will give you 4 options "New Account", "View Employees", "View Work Schedule" and "Log Off"<br/>
+   **Log Off** will redirect back to the homepage.<br/>
+   **New Account** will redirect to a create new employee page, please note that all new employees ID will start with "10"
+   **View Employees** will display a table with all the existing waiters available and their details.
+   **View Work Schedule** will display all the waiters availabilty and notify the administrator if certain days are overbooked, sufficient or insufficient.
+
 
 
 
