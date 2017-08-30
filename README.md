@@ -116,7 +116,7 @@ GET | /days 	  | Show the administrator which days waiters can work.
 1. To access the waiter page, input the appropriate waiter id starting with "10"<br/>.
 2. Once the correct id is inputed the page will redirect to a Waiter Welcome page that would request the waiter to input the days that they will be working.<br/>
 
-![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/existingID's.GIF)
+![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/checkbox.GIF)
 
 
 3. Click "Accept". The days will be registered and the waiter will be redirected to a page that displays all the days that the waiter selected.
