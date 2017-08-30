@@ -110,7 +110,7 @@ GET | /days 	  | Show the administrator which days waiters can work.
    
    **View Work Schedule** will display all the waiters availabilty and notify the administrator if certain days are overbooked, sufficient or insufficient.
    
-   ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/login.GIF)
+   ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/schedule.GIF)
 
 
 
