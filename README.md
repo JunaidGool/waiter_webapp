@@ -76,5 +76,16 @@ GET | /waiters/:username	 	  | Show waiters a screen where they can select the d
 POST | /waiters/:username		 	  | Send the days a waiter can work to the server.
 GET | /days 	  | Show the administrator which days waiters can work.
 
+### Navigating the APP
+1. In the navigation bar, please enter 
+   ```javascript 
+   http://localhost:9001
+   ```
+   You will immediately be re-directed to 
+   ```javascript 
+   http://localhost:9001/home
+   ```
+   ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/waiter_home.GIF)
+
 
 
