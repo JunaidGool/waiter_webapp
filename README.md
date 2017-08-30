@@ -95,6 +95,13 @@ GET | /days 	  | Show the administrator which days waiters can work.
 
 ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/login.GIF)
 
+3. To view existing employee login id's click "View Employees". To access the administration page, input "90"
+
+## Administration Section
+
+
+
+
 
 
 
