@@ -86,6 +86,10 @@ GET | /days 	  | Show the administrator which days waiters can work.
    http://localhost:9001/home
    ```
    ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/waiter_home.GIF)
+   
+2. This is the login page. The administrator or the waiter will enter their login details to view their related pages and perform their required tasks. To enter the administrators page, input "90".
+
+
 
 
 
