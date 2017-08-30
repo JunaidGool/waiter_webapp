@@ -1,6 +1,6 @@
 # waiter_webapp
 
-![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/waiter_home.GIF)
+![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/waiter_intro.GIF)
 
 ### A Waiter App that :
 * Enables a waiter and an administrator to login and view different screens.
