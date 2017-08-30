@@ -111,6 +111,19 @@ GET | /days 	  | Show the administrator which days waiters can work.
    **View Work Schedule** will display all the waiters availabilty and notify the administrator if certain days are overbooked, sufficient or insufficient.
    
    ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/schedule.GIF)
+   
+#### Waitor Section
+1. To access the waiter page, input the appropriate waiter id starting with "10"<br/>.
+2. Once the correct id is inputed the page will redirect to a Waiter Welcome page that would request the waiter to input the days that they will be working.<br/>
+
+![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/existingID's.GIF)
+
+
+3. Click "Accept". The days will be registered and the waiter will be redirected to a page that displays all the days that the waiter selected.
+
+![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/existingID's.GIF)
+
+
 
 
 
