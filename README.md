@@ -102,7 +102,7 @@ GET | /days 	  | Show the administrator which days waiters can work.
    **Log Off** will redirect back to the homepage.<br/>
    **New Account** will redirect to a create new employee page, please note that all new employees ID will start with "10". <br/>
    
-   ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/login.GIF)
+   ![Alt text](https://github.com/JunaidGool/waiter_webapp/blob/master/readme_images/createNewAccount.GIF)
    
    **View Employees** will display a table with all the existing waiters available and their details. <br/>
    
