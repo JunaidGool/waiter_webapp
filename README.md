@@ -65,7 +65,7 @@ in the command line. This will install all the required dependencies.<br/>
    ```javascript 
     "Now listening to Port Number: 9001"
     ```
-    The Api is now succesfully running !! <br/>
+    The app is now succesfully running !! <br/>
     You are now able to add, view and update stock using postman and have the option to view your data within your database using Robomongo.
     
 ### Understanding the Routes
